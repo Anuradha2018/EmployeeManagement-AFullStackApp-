@@ -14,6 +14,18 @@
 
     },
     {
+        "id": 10,
+        "name":"Martha",
+        "gender": "Female",
+        "email":"martha@grasshopper.com",
+        "phoneNumber": 32923901,
+        "contactPreference": "Email",
+        "dateOfBirth": "09/05/1985",
+        "department":"Accounts",
+        "isActive":true,
+        "photoPath":"https://i.postimg.cc/rs258txp/woman-3060784-640.jpg"
+    },
+    {
         "id": 2,
         "name":"Jacob",
         "gender": "Male",
@@ -24,78 +36,6 @@
         "department":"IT",
         "isActive":true,
         "photoPath":"https://i.postimg.cc/br8BD481/adult-business-businessman-50855.jpg"
-    },
-    {
-        "id": 3,
-        "name":"Jack",
-        "gender": "Male",
-        "email":"jack@grasshopper.com",
-        "phoneNumber": 75435794,
-        "contactPreference": "Email",
-        "dateOfBirth": "08/12/1989",
-        "department":"Finance",
-        "isActive":true,
-        "photoPath":"https://i.postimg.cc/KcrVScrf/adult-business-bussinesman-32976.jpg"
-    },
-    {
-        "id": 4,
-        "name":"John",
-        "gender": "Male",
-        "email":"john@grasshopper.com",
-        "phoneNumber": 45609772,
-        "contactPreference": "Email",
-        "dateOfBirth": "21/13/1988",
-        "department":"Sales & Marketing",
-        "isActive":true,
-        "photoPath":"https://i.postimg.cc/vTzSWXHk/adult-eyeglasses-eyewear-98045.jpg"
-    },
-    {
-        "id": 5,
-        "name":"Peter",
-        "gender": "Male",
-        "email":"peter@grasshopper.com",
-        "phoneNumber": 65218769,
-        "contactPreference": "Email",
-        "dateOfBirth": "05/25/1990",
-        "department":"Procurement",
-        "isActive":true,
-        "photoPath":"https://i.postimg.cc/3J8qKMtT/marius-ciocirlan-398931-unsplash.jpg"
-    },
-    {
-        "id": 6,
-        "name":"Helen",
-        "gender": "Female",
-        "email":"helen@grasshopper.com",
-        "phoneNumber": 792139213,
-        "contactPreference": "Email",
-        "dateOfBirth": "03/24/1980",
-        "department":"VP",
-        "isActive":true,
-        "photoPath":"https://i.postimg.cc/hthczY3P/assistant-18993-640.jpg"
-    },
-    {
-        "id": 7,
-        "name":"Veronica",
-        "gender": "Female",
-        "email":"veronica@grasshopper.com",
-        "phoneNumber": 65218769,
-        "contactPreference": "Email",
-        "dateOfBirth": "11/12/1990",
-        "department":"Sales & Marketing",
-        "isActive":true,
-        "photoPath":"https://i.postimg.cc/Df1qxB34/business-3560929-640.jpg"
-    },
-    {
-        "id": 8,
-        "name":"Donna",
-        "gender": "Female",
-        "email":"donna@grasshopper.com",
-        "phoneNumber": 83274932,
-        "contactPreference": "Email",
-        "dateOfBirth": "02/13/1984",
-        "department":"R & D",
-        "isActive":true,
-        "photoPath":"https://i.postimg.cc/GtPG9hxx/business-3560935-640.jpg"
     },
     {
         "id": 9,
@@ -110,15 +50,75 @@
         "photoPath":"https://i.postimg.cc/KYVnHWYB/business-woman-2756210-640.jpg"
     },
     {
-        "id": 10,
-        "name":"Martha",
-        "gender": "Female",
-        "email":"alexis@grasshopper.com",
-        "phoneNumber": 32923901,
+        "id": 4,
+        "name":"John",
+        "gender": "Male",
+        "email":"john@grasshopper.com",
+        "phoneNumber": 45609772,
         "contactPreference": "Email",
-        "dateOfBirth": "09/05/1985",
-        "department":"Accounts",
+        "dateOfBirth": "21/13/1988",
+        "department":"Sales & Marketing",
         "isActive":true,
-        "photoPath":"https://i.postimg.cc/rs258txp/woman-3060784-640.jpg"
+        "photoPath":"https://i.postimg.cc/vTzSWXHk/adult-eyeglasses-eyewear-98045.jpg"
+    },
+    {
+        "id": 8,
+        "name":"Donna",
+        "gender": "Female",
+        "email":"donna@grasshopper.com",
+        "phoneNumber": 83274932,
+        "contactPreference": "Email",
+        "dateOfBirth": "02/13/1984",
+        "department":"R & D",
+        "isActive":true,
+        "photoPath":"https://i.postimg.cc/GtPG9hxx/business-3560935-640.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Jack",
+        "gender": "Male",
+        "email":"jack@grasshopper.com",
+        "phoneNumber": 75435794,
+        "contactPreference": "Email",
+        "dateOfBirth": "08/12/1989",
+        "department":"Finance",
+        "isActive":true,
+        "photoPath":"https://i.postimg.cc/KcrVScrf/adult-business-bussinesman-32976.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Helen",
+        "gender": "Female",
+        "email":"helen@grasshopper.com",
+        "phoneNumber": 792139213,
+        "contactPreference": "Email",
+        "dateOfBirth": "03/24/1980",
+        "department":"VP",
+        "isActive":true,
+        "photoPath":"https://i.postimg.cc/hthczY3P/assistant-18993-640.jpg"
+    },
+    {
+        "id": 5,
+        "name":"Peter",
+        "gender": "Male",
+        "email":"peter@grasshopper.com",
+        "phoneNumber": 65218769,
+        "contactPreference": "Email",
+        "dateOfBirth": "05/25/1990",
+        "department":"Procurement",
+        "isActive":true,
+        "photoPath":"https://i.postimg.cc/3J8qKMtT/marius-ciocirlan-398931-unsplash.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Veronica",
+        "gender": "Female",
+        "email":"veronica@grasshopper.com",
+        "phoneNumber": 65218769,
+        "contactPreference": "Email",
+        "dateOfBirth": "11/12/1990",
+        "department":"Sales & Marketing",
+        "isActive":true,
+        "photoPath":"https://i.postimg.cc/Df1qxB34/business-3560929-640.jpg"
     }
 ]
