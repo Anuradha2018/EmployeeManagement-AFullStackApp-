@@ -1,0 +1,13 @@
+.imageClass{
+    width:200px;
+    height: 200px;
+    margin-left:20px;
+}
+.container {
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.card {
+    width: 80%;
+    margin-left: 110px;
+}
