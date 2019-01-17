@@ -3,14 +3,11 @@
     height: 200px;
     margin-left:20px;
 }
-.container {
-    margin-top:50px;
-    margin-bottom:50px;
-}
 .card {
     width: 80%;
     margin-left: 110px;
     margin-bottom:20px;
+    margin-top: 20px;
 }
 .vertical-align {
     display: flex;

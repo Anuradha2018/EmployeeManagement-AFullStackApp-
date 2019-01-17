@@ -1,3 +1,64 @@
-<p>
-  create-employee works!
-</p>
+<form #employeeForm="ngForm" (ngSubmit)="saveEmployee(employeeForm)">
+  <div class="card mb-3">
+    <div class="card-header bg-info">
+      <h4 class="card-title">Create Employee</h4>
+    </div>
+    <div class="card-body">
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input
+          name="fullname"
+          [(ngModel)]="fullName"
+          type="text"
+          class="form-control"
+          id="exampleInputName"
+          placeholder="Enter Fullname"
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input
+          name="email"
+          [(ngModel)]="email"
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          placeholder="Enter email"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+      <div class="form-group">
+        <label>Gender</label>
+        <div class="form-control">
+          <div class="custom-control custom-radio custom-control-inline">
+            <input
+              type="radio"
+              id="radio1"
+              name="radio1"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="genderMale">Male</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input
+              type="radio"
+              id="radio2"
+              name="radio2"
+              class="custom-control-input"
+            />
+            <label class="custom-control-label" for="genderFemale"
+              >Female</label
+            >
+          </div>
+        </div>
+      </div>
+
+      {{ employeeForm.value | json }}
+    </div>
+    <div class="card-footer bg-transparent">
+      <button type="submit" class="btn btn-info">Save</button>
+    </div>
+  </div>
+</form>
