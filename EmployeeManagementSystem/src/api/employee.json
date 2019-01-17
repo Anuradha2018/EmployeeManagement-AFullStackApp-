@@ -45,7 +45,7 @@
         "phoneNumber": 632472942,
         "contactPreference": "Email",
         "dateOfBirth": "10/9/1982",
-        "department":"Supervisor",
+        "department":"HR",
         "isActive":true,
         "photoPath":"https://i.postimg.cc/KYVnHWYB/business-woman-2756210-640.jpg"
     },
@@ -93,7 +93,7 @@
         "phoneNumber": 792139213,
         "contactPreference": "Email",
         "dateOfBirth": "03/24/1980",
-        "department":"VP",
+        "department":"Help Desk",
         "isActive":true,
         "photoPath":"https://i.postimg.cc/hthczY3P/assistant-18993-640.jpg"
     },

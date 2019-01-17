@@ -1,7 +1,7 @@
 <form #employeeForm="ngForm" (ngSubmit)="saveEmployee(employeeForm)">
   <div class="card mb-3">
-    <div class="card-header bg-info">
-      <h4 class="card-title">Create Employee</h4>
+    <div class="card-header" style="background-color:teal;">
+      <h4 class="card-title" style="color: white">Create Employee</h4>
     </div>
     <div class="card-body">
       <div class="form-group">
@@ -85,6 +85,36 @@
           </label>
         </div>
       </div>
+      <div class="form-group">
+        <div class="form-control">
+          <label class="checkbox-inline">
+            <input
+              type="checkbox"
+              name="isActive"
+              [(ngModel)]="isActive"
+              style="margin-right:10px;"
+            />Is Active
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+          <label for="department">Department</label>
+          <select
+            id="department"
+            name="department"
+            [(ngModel)]="department"
+            class="form-control"
+          >
+            <option value="1">Help Desk</option>
+            <option value="2">HR</option>
+            <option value="3">IT</option>
+            <option value="4">R&D</option>
+            <option value="5">Finance</option>
+            <option value="6">Accounts</option>
+            <option value="7">Sales&Marketing</option>
+            <option value="8">Procurement</option>
+          </select>
+        </div>
       {{ employeeForm.value | json }}
     </div>
     <div class="card-footer bg-transparent">
