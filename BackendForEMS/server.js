@@ -14,6 +14,17 @@ app.get('/', (req, res) => {
 
 
 app.post('/register', (req, res) => {
+    let empData = req.body;
+    let emp = new User(empData);
+    emp.save((err, result) => {
+        if(err) {
+            console.log('saving emp error');
+        }
+        
+            res.sendStatus(200);
+    });
+});
+app.post('/login', (req, res) => {
     let userData = req.body;
     let user = new User(userData);
     user.save((err, result) => {

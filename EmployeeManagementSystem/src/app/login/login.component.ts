@@ -8,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  registerData = {};
+  loginData = {};
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
   }
   post() {
-    console.log(this.registerData);
-    this.apiService.sendUserRegistration(this.registerData);
+    console.log(this.loginData);
+    this.apiService.sendUserLogin(this.loginData);
   }
 }

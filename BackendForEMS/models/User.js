@@ -1,11 +1,21 @@
-var mongoose = require('mongoose');
+let mongoose = require('mongoose');
 
-
-var userSchema = new mongoose.Schema({
+let userSchema = new mongoose.Schema({
     name: String,
     email: String,
     username: String,
     password: String
+});
+
+let empSchema = new mongoose.Schema({
+    fullName: String,
+    email: String,
+    phoneNumber:Number,
+    contactPreference: String,
+    dateOfBirth: Date,
+    department:String,
+    isActive: Boolean,
+    photoPath:String,
 });
 
 
@@ -24,3 +34,5 @@ var userSchema = new mongoose.Schema({
 })*/
 
 module.exports = mongoose.model('User', userSchema)
+module.exports = mongoose.model('Employee', empSchema)
+

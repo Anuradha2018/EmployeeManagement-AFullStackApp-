@@ -1,14 +1,14 @@
 <form>
     <div class="card mb-3">
       <div class="card-header" style="background-color:darkblue;">
-        <h4 class="card-title" style="color: white">Register</h4>
+        <h4 class="card-title" style="color: white">Login</h4>
       </div>
       <div class="card-body">
         <div class="form-group">
           <label for="name">Name</label>
           <input
             name="name"
-            [(ngModel)]="registerData.name"
+            [(ngModel)]="loginData.name"
             type="text"
             class="form-control"
             id="exampleInputName"
@@ -19,7 +19,7 @@
             <label for="userName">Username</label>
             <input
               name="Username"
-              [(ngModel)]="registerData.username"
+              [(ngModel)]="loginData.username"
               type="text"
               class="form-control"
               id="exampleInputName"
@@ -30,7 +30,7 @@
               <label for="Email">Email</label>
               <input
                 name="email"
-                [(ngModel)]="registerData.email"
+                [(ngModel)]="loginData.email"
                 type="email"
                 class="form-control"
                 id="exampleInputEmail"
@@ -41,7 +41,7 @@
                 <label for="password">Password</label>
                 <input
                   name="password"
-                  [(ngModel)]="registerData.password"
+                  [(ngModel)]="loginData.password"
                   type="text"
                   class="form-control"
                   id="examplePassword"

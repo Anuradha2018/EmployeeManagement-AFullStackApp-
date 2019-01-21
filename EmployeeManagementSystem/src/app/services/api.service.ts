@@ -9,7 +9,11 @@ export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  sendUserRegistration(registerData) {
+  sendEmpRegistration(registerData) {
     this.httpClient.post('http://localhost:3000/register', registerData).subscribe(res =>{})
   }
+  sendUserLogin(registerData) {
+    this.httpClient.post('http://localhost:3000/login', registerData).subscribe(res =>{})
+  }
+
 }

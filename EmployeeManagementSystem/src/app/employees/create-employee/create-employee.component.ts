@@ -39,6 +39,10 @@ export class CreateEmployeeComponent implements OnInit {
   }
   togglePhotoPreview() {
     this.previewPhoto = !this.previewPhoto;
-  } 
+  }
+  post() {
+    console.log(this.registerData);
+    this.apiService.sendEmpRegistration(this.registerData);
+  }
 
 }
