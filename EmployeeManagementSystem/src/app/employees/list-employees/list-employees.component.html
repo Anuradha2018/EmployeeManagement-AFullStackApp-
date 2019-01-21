@@ -1,73 +1,64 @@
-<app-navbar></app-navbar>
-    <div class="card card-primary" *ngFor="let e of employees">
-        <div class="card-heading bg-info mb-3">
-          <h3 class="card-title">{{e.name}}</h3>
+<div class="card card-primary" *ngFor="let e of employees">
+  <div class="card-heading bg-info mb-3">
+    <h3 class="card-title">{{ e.name }}</h3>
+  </div>
+  <div class="card-body">
+    <div class="col-xs-10">
+      <div class="verical-align" class="row">
+        <div class="col-xs-4">
+          <img class="imageClass" [src]="e.photoPath" />
         </div>
-        <div class="card-body">
-          <div class="col-xs-10">
-            <div class="verical-align" class="row">
-              <div class="col-xs-4">
-                <img class="imageClass" [src]="e.photoPath"/>
-              </div>
-              <div style="margin-left: 70px" class="col-xs-8">
-                <div class="row">
-                  <div class="col-xs-6">
-                    Gender
-                  </div>
-                  <div style="margin-left: 160px" class="col-xs-6">
-                   : {{e.gender}}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-6">
-                    Contact Preferences
-                  </div>
-                  <div style="margin-left: 72px" class="col-xs-6">
-                   : {{e.contactPreference}}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-6">
-                    Email
-                  </div>
-                  <div style="margin-left: 175px" class="col-xs-6">
-                   : {{e.email}}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-6">
-                    Phone Number
-                  </div>
-                  <div style="margin-left: 105px" class="col-xs-6">
-                   : {{e.phoneNumber}}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-6">
-                    Date Of Birth
-                  </div>
-                  <div style="margin-left: 120px" class="col-xs-6">
-                   : {{e.dateOfBirth}}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-6">
-                    Department
-                  </div>
-                  <div style="margin-left: 125px" class="col-xs-6">
-                   : {{e.department}}
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-6">
-                    Status
-                  </div>
-                  <div style="margin-left: 167px" class="col-xs-6">
-                   : {{e.isActive}}
-                  </div>
-                </div>
-              </div>
+        <div style="margin-left: 70px" class="col-xs-8">
+          <div class="row">
+            <div class="col-xs-6">Employee ID</div>
+            <div style="margin-left: 123px" class="col-xs-6">
+              : {{ e.id }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Gender</div>
+            <div style="margin-left: 160px" class="col-xs-6">
+              : {{ e.gender }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Contact Preferences</div>
+            <div style="margin-left: 72px" class="col-xs-6">
+              : {{ e.contactPreference }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Email</div>
+            <div style="margin-left: 175px" class="col-xs-6">
+              : {{ e.email }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Phone Number</div>
+            <div style="margin-left: 105px" class="col-xs-6">
+              : {{ e.phoneNumber }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Date Of Birth</div>
+            <div style="margin-left: 120px" class="col-xs-6">
+              : {{ e.dateOfBirth }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Department</div>
+            <div style="margin-left: 127px" class="col-xs-6">
+              : {{ e.department }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">Status</div>
+            <div style="margin-left: 167px" class="col-xs-6">
+              : {{ e.isActive }}
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>

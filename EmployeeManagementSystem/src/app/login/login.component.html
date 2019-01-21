@@ -1,17 +1,57 @@
-<div class="window">
-  <div class="overlay"></div>
-  <div class="content">
-    <div class="welcome">Hello There!</div>
-    <div class="subtitle">Sign in to get access to Employee Directory</div>
-    <div class="input-fields">
-      <input type="text" placeholder="Username" class="input-line full-width" />
-      <input type="email" placeholder="Email" class="input-line full-width" />
-      <input
-        type="password"
-        placeholder="Password"
-        class="input-line full-width"
-      />
+<form>
+    <div class="card mb-3">
+      <div class="card-header" style="background-color:darkblue;">
+        <h4 class="card-title" style="color: white">Register</h4>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            name="name"
+            [(ngModel)]="registerData.name"
+            type="text"
+            class="form-control"
+            id="exampleInputName"
+            placeholder="Enter Name"
+          />
+        </div>
+        <div class="form-group">
+            <label for="userName">Username</label>
+            <input
+              name="Username"
+              [(ngModel)]="registerData.username"
+              type="text"
+              class="form-control"
+              id="exampleInputName"
+              placeholder="Enter Username"
+            />
+          </div>
+          <div class="form-group">
+              <label for="Email">Email</label>
+              <input
+                name="email"
+                [(ngModel)]="registerData.email"
+                type="email"
+                class="form-control"
+                id="exampleInputEmail"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  name="password"
+                  [(ngModel)]="registerData.password"
+                  type="text"
+                  class="form-control"
+                  id="examplePassword"
+                  placeholder="Enter Password"
+                />
+              </div>
+      <div class="card-footer bg-transparent">
+        <button (click)="post()" type="submit" class="btn" style="background-color: darkblue; color:white;">Save</button>
+      </div>
     </div>
-    <button type="button" class="btn btn-lg" style="background-color:blueviolet">Sign In</button>
-  </div>
-</div>
+    </div>
+  </form>
+  

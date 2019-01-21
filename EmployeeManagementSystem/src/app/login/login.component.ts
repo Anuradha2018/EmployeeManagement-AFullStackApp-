@@ -1,4 +1,6 @@
+import { ApiService } from './../services/api.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-login',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+  registerData = {};
+  constructor(private apiService: ApiService) { }
 
   ngOnInit() {
   }
-
+  post() {
+    console.log(this.registerData);
+    this.apiService.sendUserRegistration(this.registerData);
+  }
 }

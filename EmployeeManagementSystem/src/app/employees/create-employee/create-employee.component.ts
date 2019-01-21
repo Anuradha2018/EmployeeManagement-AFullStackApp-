@@ -2,6 +2,7 @@ import { Department } from './../../models/department';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
+import { ApiService } from './../../services/api.service';
 
 @Component({
   selector: 'app-create-employee',
@@ -11,6 +12,7 @@ import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
 export class CreateEmployeeComponent implements OnInit {
   previewPhoto:boolean = false;
   datePickerConfig: Partial<BsDatepickerConfig>;
+  registerData = {};
 
   departments: Department[] = [
     { id: 1, name: 'Help Desk' },
@@ -23,7 +25,7 @@ export class CreateEmployeeComponent implements OnInit {
     { id: 8, name: 'Procurement' },
 
   ];
-  constructor() { 
+  constructor(private apiService: ApiService) { 
     this.datePickerConfig = Object.assign({}, { 
       containerClass: 'theme-dark-blue',
       dateInputFormat: 'DD/MM/YYYY'
