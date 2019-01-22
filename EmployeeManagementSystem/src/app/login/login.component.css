@@ -1,6 +1,46 @@
-.card{
-  margin-top:40px;
-  width:60%;
-  margin-left:auto;
-  margin-right:auto;
+header.masthead {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: white;
+ 
+  background: url("./../../assets/img/bg-pattern.png"), #7b4397;
+  background: url("./../../assets/img/bg-pattern.png"),
+    -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+  background: url("./../../assets/img/bg-pattern.png"),
+    linear-gradient(to left, #7b4397, #dc2430);
+}
+
+header.masthead .header-content {
+  margin-bottom: 200px;
+  text-align: center;
+}
+
+header.masthead .header-content h1 {
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.masthead .header-content h1 {
+    font-size: 50px;
+  }
+}
+
+.card {
+  margin-top: 40px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
