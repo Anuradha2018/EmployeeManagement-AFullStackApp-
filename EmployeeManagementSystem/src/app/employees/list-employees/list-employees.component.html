@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
-<div class="card card-primary" *ngFor="let e of employees">
+<div class="card card-primary" *ngFor="let e of employeeService.employees">
   <div class="card-heading bg-info mb-3">
-    <h3 class="card-title">{{ e.name }}</h3>
+    <h3 class="card-title">{{ e.fullName }}</h3>
   </div>
   <div class="card-body">
     <div class="col-xs-10">

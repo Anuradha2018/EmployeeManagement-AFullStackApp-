@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-employees.component.css']
 })
 export class ListEmployeesComponent implements OnInit {
-  employees:Employee[];
+  // employees:Employee[];
   
   constructor(private employeeService:EmployeesService) { }
 
@@ -16,7 +16,7 @@ export class ListEmployeesComponent implements OnInit {
     this.showEmployees();
   }
   showEmployees() {
-    return this.employeeService.getEmployees().subscribe((data:any)=> this.employees = data);
+    return this.employeeService.getEmployees();
   }
 
 }

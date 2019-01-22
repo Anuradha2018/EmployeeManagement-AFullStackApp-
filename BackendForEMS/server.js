@@ -22,6 +22,16 @@ app.get('/users', async (req, res) => {
         res.sendStatus(500);
     }
 });
+app.get('/register', async (req, res) => {
+    try {
+        let emps= await Emp.find({});
+        res.send(emps);
+    } catch(error) {
+        console.error(error);
+        res.sendStatus(500);
+    }
+});
+
 
 
 app.post('/register', (req, res) => {

@@ -123,7 +123,7 @@
           [(ngModel)]="registerData.department"
           class="form-control"
         >
-          <option *ngFor="let dept of departments" [value]="dept.id">
+          <option *ngFor="let dept of departments" [value]="dept.name">
             {{ dept.name }}
           </option>
         </select>

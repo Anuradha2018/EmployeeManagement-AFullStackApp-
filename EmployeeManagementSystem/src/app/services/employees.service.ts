@@ -5,10 +5,13 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class EmployeesService {
+  employees:any = [];
 
   constructor(private http: HttpClient) { }
 
   getEmployees() {
-    return this.http.get('../src/api/employee.json');
+    return this.http.get('http://localhost:3000/register').subscribe(res=> {
+    this.employees = res;
+    });
   }
 }
