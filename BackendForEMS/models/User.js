@@ -7,16 +7,7 @@ let userSchema = new mongoose.Schema({
     password: String
 });
 
-let empSchema = new mongoose.Schema({
-    fullName: String,
-    email: String,
-    phoneNumber:Number,
-    contactPreference: String,
-    dateOfBirth: Date,
-    department:String,
-    isActive: Boolean,
-    photoPath:String,
-});
+
 
 
 /* userSchema.pre('save', function(next) {
@@ -34,5 +25,5 @@ let empSchema = new mongoose.Schema({
 })*/
 
 module.exports = mongoose.model('User', userSchema)
-module.exports = mongoose.model('Employee', empSchema)
+
 

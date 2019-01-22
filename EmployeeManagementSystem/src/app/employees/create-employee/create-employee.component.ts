@@ -2,7 +2,7 @@ import { Department } from './../../models/department';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
-import { ApiService } from './../../services/api.service';
+import { AuthService } from './../../services/auth.service';
 
 @Component({
   selector: 'app-create-employee',
@@ -25,7 +25,7 @@ export class CreateEmployeeComponent implements OnInit {
     { id: 8, name: 'Procurement' },
 
   ];
-  constructor(private apiService: ApiService) { 
+  constructor(private authService: AuthService) { 
     this.datePickerConfig = Object.assign({}, { 
       containerClass: 'theme-dark-blue',
       dateInputFormat: 'DD/MM/YYYY'
@@ -42,7 +42,7 @@ export class CreateEmployeeComponent implements OnInit {
   }
   post() {
     console.log(this.registerData);
-    this.apiService.sendEmpRegistration(this.registerData);
+    this.authService.sendEmpRegistration(this.registerData);
   }
 
 }

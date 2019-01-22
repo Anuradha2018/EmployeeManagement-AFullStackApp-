@@ -1,3 +1,5 @@
+import { AuthService } from './services/auth.service';
+import { ApiService } from './services/api.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -12,10 +14,10 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes = [
+  { path:'login', component: LoginComponent},
   { path:'list', component: ListEmployeesComponent },
   { path:'create', component: CreateEmployeeComponent },
-  { path:'login', component: LoginComponent},
-  { path:'', redirectTo: '/list', pathMatch: 'full' }
+  { path:'', redirectTo: '/login', pathMatch: 'full' }
 ]
 
 @NgModule({
@@ -33,7 +35,7 @@ const appRoutes: Routes = [
     FormsModule,
     BsDatepickerModule.forRoot()
   ],
-  providers: [],
+  providers: [ApiService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

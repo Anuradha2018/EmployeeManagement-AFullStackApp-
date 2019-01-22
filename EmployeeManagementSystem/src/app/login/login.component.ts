@@ -1,4 +1,4 @@
-import { ApiService } from './../services/api.service';
+import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 
 
@@ -9,12 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
   loginData = {};
-  constructor(private apiService: ApiService) { }
+  constructor(private authService: AuthService) { }
 
   ngOnInit() {
   }
   post() {
-    console.log(this.loginData);
-    this.apiService.sendUserLogin(this.loginData);
+    // console.log(this.loginData);
+    this.authService.sendUserLogin(this.loginData);
   }
 }
