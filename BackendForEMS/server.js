@@ -3,10 +3,14 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 let jwt = require('jwt-simple');
+
 const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.text());
+
+mongoose.Promise = Promise;
+
 let User = require('./models/User.js')  
 let Emp = require('./models/Employee.js') 
 
@@ -31,6 +35,18 @@ app.get('/register', async (req, res) => {
         res.sendStatus(500);
     }
 });
+app.get('/empdetail/:id', async (req, res) => {
+    // console.log(req.params.id);
+    try {
+        let emp = await Emp.findById(req.params.id);
+        res.send(emp);
+    } catch(error) {
+        console.error(error);
+         res.sendStatus(500);
+    }
+   
+});
+
 
 
 

@@ -6,6 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class EmployeesService {
   employees:any = [];
+  empDetailURL: string ="http://localhost:3000/empdetail"
 
   constructor(private http: HttpClient) { }
 
@@ -14,4 +15,7 @@ export class EmployeesService {
     this.employees = res;
     });
   }
-}
+  getEmpDetails(id) {
+    return this.http.get(`${this.empDetailURL}/${id}`);
+  }
+ }

@@ -1,6 +1,7 @@
 let mongoose = require('mongoose');
 
 let empSchema = new mongoose.Schema({
+    id: Number,
     fullName: String,
     gender: String,
     email: String,

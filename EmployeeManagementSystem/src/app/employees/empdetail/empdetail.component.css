@@ -1,0 +1,15 @@
+.imageClass{
+    width:200px;
+    height: 200px;
+    margin-left:20px;
+}
+.card {
+    width: 80%;
+    margin-left: 110px;
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+}

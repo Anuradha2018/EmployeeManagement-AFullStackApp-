@@ -12,8 +12,10 @@ import { ListEmployeesComponent } from './employees/list-employees/list-employee
 import { CreateEmployeeComponent } from './employees/create-employee/create-employee.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EmpdetailComponent } from './employees/empdetail/empdetail.component';
 
 const appRoutes: Routes = [
+  { path:'empdetail/:id', component:EmpdetailComponent},
   { path:'login', component: LoginComponent},
   { path:'list', component: ListEmployeesComponent },
   { path:'create', component: CreateEmployeeComponent },
@@ -26,7 +28,8 @@ const appRoutes: Routes = [
     ListEmployeesComponent,
     CreateEmployeeComponent,
     LoginComponent,
-    NavbarComponent
+    NavbarComponent,
+    EmpdetailComponent
   ],
   imports: [
     BrowserModule,
