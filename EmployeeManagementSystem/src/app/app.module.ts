@@ -13,10 +13,12 @@ import { CreateEmployeeComponent } from './employees/create-employee/create-empl
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EmpdetailComponent } from './employees/empdetail/empdetail.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
 
 const appRoutes: Routes = [
-  { path:'empdetail/:id', component:EmpdetailComponent},
-  { path:'login', component: LoginComponent},
+  { path:'empdetail/:id', component:EmpdetailComponent },
+  { path:'register', component: RegisterUserComponent },
+  { path:'login', component: LoginComponent },
   { path:'list', component: ListEmployeesComponent },
   { path:'create', component: CreateEmployeeComponent },
   { path:'', redirectTo: '/login', pathMatch: 'full' }
@@ -29,7 +31,8 @@ const appRoutes: Routes = [
     CreateEmployeeComponent,
     LoginComponent,
     NavbarComponent,
-    EmpdetailComponent
+    EmpdetailComponent,
+    RegisterUserComponent
   ],
   imports: [
     BrowserModule,

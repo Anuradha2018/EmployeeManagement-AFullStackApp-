@@ -8,22 +8,22 @@ let userSchema = new mongoose.Schema({
     password: String
 });
 
+ 
 
-
-
+//with userSchema we will be able to access pre method.
  userSchema.pre('save', function(next) {
-    var user = this
-
+    let user = this; // subject in this case being saved to user.
+// to check if passowrd is changed or not , so we use bcrypt
     if (!user.isModified('password'))
         return next()
 
     bcrypt.hash(user.password, null, null, (err, hash) => {
         if(err) return next(err)
-
-        user.pwd = hash
-        next()
-    })
-})
+        // console.log(hash);
+        user.password = hash;
+        next();
+    });
+});
 
 module.exports = mongoose.model('User', userSchema)
 
