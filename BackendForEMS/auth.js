@@ -1,3 +1,9 @@
+let bcrypt = require('bcrypt-nodejs');
+let jwt = require('jwt-simple');
+
+let User = require('./models/User.js');
+let Emp = require('./models/Employee.js');
+
 module.exports = {
     register: (req, res) => {
         let empData = req.body;
@@ -25,7 +31,7 @@ module.exports = {
     login: async (req, res) => {
         let loginData = req.body;
         // let user = new User(userData);
-        let user = await User.findOne({email: loginData.email});
+        let user = await User.findOne({username: loginData.username});
     
     
         if(!user) 

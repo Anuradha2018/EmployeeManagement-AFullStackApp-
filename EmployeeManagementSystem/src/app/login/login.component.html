@@ -6,9 +6,6 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/login">Login</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" routerLink="/register">Register</a>
       </li>
     </ul>
@@ -18,13 +15,13 @@
 <header class="masthead">
   <div class="container h-100">
     <h2 align="center" style="padding-top:30px;">
-      WELCOME To GRASSHOPPER EMPLOYEE DIRECTORY!!
+      WELCOME TO GRASSHOPPER EMPLOYEE DIRECTORY!!
     </h2>
     <div style="margin-top:-90px" class="row h-100">
       <div class="col-lg-5 my-auto">
         <div class="header-content mx-auto">
           <h3 class="mb-5">Login to the Employee Directory.</h3>
-          <h5>For access contact the admin.</h5>
+          <h5>Register (for a new User).</h5>
         </div>
       </div>
 
@@ -84,6 +81,7 @@
                   (click)="post()"
                   type="submit"
                   class="btn"
+                  routerLink="/list"
                   style="background-color: darkblue; color:white;"
                 >
                   Login

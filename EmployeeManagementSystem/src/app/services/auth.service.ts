@@ -20,4 +20,9 @@ export class AuthService {
     });
     
   }
+  sendUserRegistration(userData) {
+    this.httpClient.post('http://localhost:3000/registerUser', userData).subscribe(res => {
+    console.log(res);
+    });
+  }
 }
