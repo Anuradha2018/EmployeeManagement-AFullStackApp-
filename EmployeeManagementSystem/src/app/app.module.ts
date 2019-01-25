@@ -1,5 +1,4 @@
 import { AuthService } from './services/auth.service';
-import { ApiService } from './services/api.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
@@ -41,7 +40,7 @@ const appRoutes: Routes = [
     FormsModule,
     BsDatepickerModule.forRoot()
   ],
-  providers: [ApiService, AuthService],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
